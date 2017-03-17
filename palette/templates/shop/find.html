@@ -20,7 +20,7 @@
       </div>
 
       <form id="searchForm" class="form form-search" method="POST" action="" role="form">
-        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+        {{ form.csrf_token }}
 
         <div class="col-sm-5 col-lg-5 col-md-5">
           <div class="form-group">

@@ -1,7 +1,7 @@
 <h1>Reservation</h1>
 <br/>
 <form id="registerForm" class="form form-register" method="POST" action="" role="form">
-  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+  {{ form.csrf_token }}
 
   <div class="form-group">
     {{form.username.label}}

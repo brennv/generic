@@ -8,7 +8,7 @@
     <h1>Log in</h1>
     <br/>
     <form id="loginForm" method="POST" class="form form-register" action="/login/" role="login">
-      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+      {{ form.csrf_token }}
 
       <div class="form-group">
         {{ form.username(placeholder="Username or email", class_="form-control") }}

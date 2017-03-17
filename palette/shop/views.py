@@ -35,7 +35,7 @@ def item(item_id):  # user_id,
 def share():
     """Register new user."""
     # login_form = LoginForm(request.form)
-    form = ItemForm(request.form, csrf_enabled=False)  # TODO try adding csrf_enabled=False to MapForm
+    form = ItemForm(request.form)  # , meta.csrf=False)
     if form.validate_on_submit():
         user_id = current_user.id
         username = current_user.username

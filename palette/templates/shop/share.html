@@ -10,7 +10,8 @@
       <h1>Share item</h1>
       <p>Post item.</p>
       <form id="itemForm" class="form form-item" method="POST" action="" role="form">
-          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+          {{ form.csrf_token }}
+          
           <div class="form-group">
             {{form.name.label}}
             {{form.name(placeholder="Name", class_="form-control")}}
